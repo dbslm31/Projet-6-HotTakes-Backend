@@ -174,19 +174,13 @@ exports.likeSauce = (req, res, next) => {
                 }
 
 
-
-
-
-
-
-
     }).catch(
-        (error) =>{
+        (error) => {
+            res.status(400).json({
+              error: error
+           
 
-        });
-    
-
-
-
-    //like = -1 (+1 pour les dislikes)
-} 
+            });
+        }
+      );
+    };
