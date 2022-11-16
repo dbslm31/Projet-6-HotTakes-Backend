@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 const path = require('path');
+const dotenv = require('dotenv').config()
 
 const app = express();
 app.use(express.json());
@@ -15,7 +16,7 @@ const userRoutes = require('./routes/user');
 const saucesRoutes = require('./routes/sauce');
 
 //Connexion à MongoDB
-mongoose.connect('mongodb+srv://dbslm31:MabulTaveg974!@hottakesdb.9mgl0wa.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect(`mongodb+srv://${process.env.MDB_USERNAME}:${process.env.MDB_PASSWORD}@hottakesdb.9mgl0wa.mongodb.net/?retryWrites=true&w=majority`,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
