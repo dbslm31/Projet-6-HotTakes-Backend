@@ -18,5 +18,3 @@ const storage = multer.diskStorage({
 });
 
 module.exports = multer({storage: storage}).single('image');
-
-//supprimer les images quand on supprime les sauces ou modifie les sauces 

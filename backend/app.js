@@ -41,3 +41,5 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 
 
 module.exports = app;
+
+//dotenv (librairie a ajouter dans package.json)
