@@ -1,5 +1,5 @@
 # Projet_6_Piiquante
-Third Project of OpenClassrooms training 
+Sixth Project of OpenClassrooms training 
 <br>2022, October.
 
 <h2> OBJECTIVES </h2>
