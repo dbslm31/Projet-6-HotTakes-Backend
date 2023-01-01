@@ -19,6 +19,7 @@ Piiquante is a brand of hot sauces that wants to expand by creating a culinary r
 <li>Create a data model for sauces and users</li>
 <li>Create a Data Base with Mongo DB</li>
 <li>Create POST, GET, DELETE routes</li>
+<li>Use Postman to verify routes</li>
 <li>Securize routes with an authentification token</li>
 <li>Manage servor and mongose errors</li>
 <li>Hash password</li>
